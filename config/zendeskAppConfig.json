@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "url": "place_for_development_link",
+        "cookies": []
+    },
+    "prod": {
+        "url": "https://core.futuresimple.com/users/login",
+        "cookies": []
+    }
+}

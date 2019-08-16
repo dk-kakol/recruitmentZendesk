@@ -1,0 +1,9 @@
+{
+    "positiveTesting": [
+        {
+            "caseName": "First correct path",
+            "mailKey":"ACCOUNTS_TRIAL_EMAIL",
+            "passwordKey": "ACCOUNTS_TRIAL_PASSWORD"
+        }
+    ]
+}
