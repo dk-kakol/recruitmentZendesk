@@ -26,7 +26,7 @@ createTestCafe('localhost', 1337, 1338)
             .browsers(['chrome'])
             .run({
                 skipJsErrors: true,
-                selectorTimeout: 5000,  //to sprawdzić czy nie trzeba zwiększyć/zmniejszyć
+                selectorTimeout: 10000,  //to sprawdzić czy nie trzeba zwiększyć/zmniejszyć
                 quarantineMode: false //docelowo na true
             });
     })

@@ -21,3 +21,5 @@ To Do:
 5. Test is prepared to run on different environments (like production and development)
 6. Test is prepared so that next test cases can be easily added
 7. Copy env file to env dist later
+8. Wyrzucić nazwę statusu z langów?
+9. Zrobić w after, by posprzątać nazwę (wrócić do new). Co jeszcze trzeba zrobić, żeby test dało się uruchamiać wiele razy?
