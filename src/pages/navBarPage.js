@@ -1,5 +1,6 @@
 import { Selector, t } from 'testcafe';
 import constants from '../../constants/langs';
+import document from '../utilities/document';
 
 export default class navigationBarPage {
     constructor() {
@@ -7,6 +8,7 @@ export default class navigationBarPage {
         this.addLeadOption = Selector('div').withAttribute('data-role', 'menu-item').find('div').withText(constants.MENU_ADD_LEAD);
         this.settings = Selector('a').withAttribute('data-original-title', 'Settings');
         this.settingsOption = Selector('a').withAttribute('href', '/settings/profile');
+        this.loadingBar = Selector('div').withAttribute('class', /.*NavigationProgressBar--bar/);
     }
 
     async clickAddButton() {
@@ -23,5 +25,9 @@ export default class navigationBarPage {
 
     async clickSettingsOption() {
         await t.click(this.settingsOption);
+    }
+
+    async verifyLoadingBar() {
+        await t.expect(this.loadingBar.getStyleProperty('width')).eql('1025px', 'Loading takes more then 40sec',  { timeout: 40000 });
     }
 }
