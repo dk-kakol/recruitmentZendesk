@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "node test_suites/singleTestSuite.js --env=prod",
+        "test": "testcafe chrome tests/leadTest.js",
         "start:single": "node test_suites/singleTestSuite.js --env=prod"
     },
     "dependencies": {

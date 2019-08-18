@@ -1,3 +1,4 @@
+const env = require('../utilities/dotEnvObject');
 import { ClientFunction } from 'testcafe';
 
 import params from '../utilities/readConsoleParams';
